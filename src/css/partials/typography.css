@@ -1,0 +1,83 @@
+/* =============================================================
+Headings / Other 
+============================================================= */
+html {
+    font-size:16px;	
+	scroll-behavior: smooth;
+}
+
+body {
+    --font-size:1rem;
+    --line-height:calc(var(--font-size) + 0.5rem);
+    font-size: var(--font-size);
+    line-height:var(--line-height);
+    font-family:var(--font-family-primary);
+    color:var(--shade-100);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    --line-height:calc(var(--font-size) + 0.5rem);
+    --font-weight: var(--fw-regular);
+	margin: 0;
+    font-size: var(--font-size);
+    font-weight:var(--font-weight);
+    margin-bottom:var(--gutter-300);
+    line-height:var(--line-height);
+}
+
+.h0 {
+    --font-size:var(--h0);  
+}
+
+h1,
+.h1 {
+    --font-size:var(--h1);
+}
+
+h2,
+.h2 {
+    --font-size:var(--h2);
+}
+
+h3,
+.h3 {
+    --font-size:var(--h3);
+}
+
+h4,
+.h4 {
+    --font-size:var(--h4);
+}
+
+h5,
+.h5 {
+    --font-size:var(--h5);
+}
+
+h6,
+.h6 {
+    --font-size:var(--h6);
+}
+
+p,
+.p {
+    --font-size:var(--body);
+    --line-height:calc(var(--font-size) + 0.8rem);
+    font-weight:var(--fw-regular);
+	margin-bottom: var(--gutter-300);
+}
+
+a:not([class]) {
+  color:var(--shade-100);
+  text-underline-offset:4px;
+}
+
+a:not([class]):hover {
+    opacity:0.7;
+}

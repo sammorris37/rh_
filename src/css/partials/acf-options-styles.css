@@ -1,0 +1,130 @@
+.wp-core-ui .button-primary {
+    background-color:#EAECF0;
+    border-color:#EAECF0;
+    color:black;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+    background-color:#EAECF0;
+    color:black;
+}
+
+.acf-tooltip.acf-fc-popup ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.acf-fc-popup ul li {
+    white-space: normal;
+}
+
+.acf-fc-popup li a {
+    background-color:white;
+    color:black;
+    aspect-ratio:2 / 1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border:1px solid #ccd0d4;
+}
+
+.acf-fc-popup li a.disabled {
+    cursor:not-allowed;
+    color:rgb(255,0,0, 0.5);
+    position:relative;
+}
+
+.acf-fc-popup li a.disabled:hover:after {
+    opacity:1;
+}
+
+.acf-fc-popup li a.disabled:hover {
+    color:white;
+    background-color:white;
+}
+
+.acf-fc-popup li a.disabled:after {
+    content:"Limit Reached For This Block";
+    background-color:rgb(255,0,0,.5);
+    color:white;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    pointer-events:none;
+}
+
+.acf-fc-popup li a:hover {
+    background-color:#EAECF0;
+    color:black;
+}
+
+.acf-tooltip.top:before,
+.acf-tooltip.bottom:before,
+.acf-tooltip.left:before {
+    display:none;
+}
+
+.acf-tooltip.acf-fc-popup {
+    padding:50px;
+    border:1px solid #ccd0d4;
+    background-color:white;
+    position:fixed;
+    inset:0 !important;
+    margin:auto;
+    width:calc(100% - 30%);
+    height:450px;
+    overflow:scroll;
+    max-width:100%;
+    border-radius:0;
+}
+
+.acf-tooltip.acf-fc-popup ul:before {
+    content: "Select Block";
+    transform: rotate(-90deg);
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 80px;
+    left: -13px;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.mce-insert-quote-btn button {
+	border-left:1px solid #010101;
+	padding-left:8px !important;
+}
+
+div.acf-button-group {
+    flex-wrap:wrap;
+}
+
+div.acf-button-group label.selected {
+    border-color: black;
+    background: #EAECF0;
+    color: black;
+}
+
+
+
+/* Global Styles */
+
+#category-search {
+    margin-top: 12px;
+    width: 100%;
+}

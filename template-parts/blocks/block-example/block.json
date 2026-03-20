@@ -1,0 +1,10 @@
+{
+  "name": "retroharbor/block-example",
+  "title": "Example",
+  "category": "customblocks",
+  "icon": "star-filled",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "block.php"
+  }
+}

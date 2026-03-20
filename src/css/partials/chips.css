@@ -1,0 +1,47 @@
+/* =============================================================
+Chip Styles
+============================================================= */
+.chip {
+    --chip-padding:0.2rem 1rem;
+    --chip-color:var(--shade-400);
+    --chip-text-color:var(--shade-900);
+    --chip-font-size:0.875rem;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:var(--chip-padding);
+    border: none;
+    background: var(--chip-color);
+    color: var(--chip-text-color);
+    border-radius:var(--radius-xl);
+    font-size:var(--chip-font-size);
+}
+
+
+/* =============================================================
+Chip Colours 
+============================================================= */
+.chip__green {
+    --chip-color:var(--ntf-200);
+    --chip-text-color:var(--white);
+}
+
+.chip__blue {
+    --chip-color:var(--ntf-300);
+    --chip-text-color:var(--white);
+}
+
+.chip__yellow {
+    --chip-color:var(--ntf-400);
+    --chip-text-color:var(--primary-400);
+}
+
+.chip__orange {
+    --chip-color:var(--ntf-500);
+    --chip-text-color:var(--white);
+}
+
+.chip__red {
+    --chip-color:var(--ntf-600);
+    --chip-text-color:var(--white);
+}

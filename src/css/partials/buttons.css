@@ -1,0 +1,76 @@
+/* =============================================================
+Button Styles
+============================================================= */
+.button {
+    --button-padding:0.7rem 1.5rem;
+    --button-color:var(--shade-400);
+    --button-text-color:var(--shade-900);
+    --button-outline-color:var(--button-color);
+    --button-font-size:1rem;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:var(--gutter-200);
+    padding:var(--button-padding);
+    border: none;
+    background: var(--button-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    border-radius:var(--radius-300);
+    font-size:var(--button-font-size);
+}
+
+.button:hover, 
+.button:focus,
+.button:focus-visible {
+    --button-color:var(--secondary-100);
+}
+
+.button svg  {
+    display:block;
+    height:var(--font-size);
+    width:var(--font-size);
+}
+
+.has-outline {
+    --button-color: transparent;
+    --button-text-color: var(--button-text-color);
+    outline-color: var(--button-outline-color);
+    outline-style: solid;
+    outline-width: 1px; /* You can adjust the width as needed */
+    outline-offset: -1px;
+}
+
+.has-outline:hover, 
+.has-outline:focus, 
+.has-outline:focus-visible {
+    --button-color: var(--button-outline-color);
+}
+
+/* =============================================================
+Button Colours 
+============================================================= */
+.button__orange {
+    --button-color:#eab463;
+    --button-text-color:var(--black);
+}
+
+.button__orange:hover, 
+.button__orange:focus,
+.button__orange:focus-visible
+ {
+    --button-color:var(--black);
+    --button-text-color:#eab463;
+}
+
+.button__green {
+    --button-color:#99ea63;
+    --button-text-color:var(--black);
+}
+
+.button__green:hover, 
+.button__green:focus,
+.button__green:focus-visible {
+    --button-color:#248631;
+    --button-text-color:#ffffff;
+}

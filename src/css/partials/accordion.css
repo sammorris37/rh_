@@ -1,0 +1,31 @@
+/* =============================================================
+Accordion
+============================================================= */
+details.accordion {
+    border-bottom: 1px solid var(--primary-200);
+}
+
+details.accordion > summary {
+    list-style: none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:var(--gutter-s);
+}
+
+details.accordion > summary:after {
+    content:"+";
+    width:24px;
+    height:24px;
+    font-size:2rem;
+    font-weight:var(--fw-regular);
+}
+
+details.accordion[open] > summary:after {
+    content:"-";
+}
+
+details.accordion > summary::-webkit-details-marker {
+    display: none;
+}
