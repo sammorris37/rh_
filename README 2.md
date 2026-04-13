@@ -35,7 +35,7 @@ Enter the theme directory and install dependencies:
 
 ```bash
 cd custom-theme
-npm install
+npm install 
 ```
 
 ## Update an existing install
