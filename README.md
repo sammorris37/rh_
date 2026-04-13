@@ -28,7 +28,7 @@ cd wp-content/themes
 Clone the repository:
 
 ```bash
-git clone https://github.com/c8-sam/rh_-2.0.git
+git clone [HTTPS LINK]
 ```
 
 Enter the theme directory and install dependencies:
